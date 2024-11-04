@@ -126,8 +126,14 @@ const elem = document.querySelector(".display");
 
 // console.log(elem);
 
-elem.addEventListener("click", () => {
+elem.addEventListener("mousemove", () => {
   //   elem.style.background = elem.style.background !== "green" ? "green" : "none";
   elem.classList.toggle("changed");
   console.log("clicked");
+});
+
+// KEYBOARD BINIDING
+
+document.addEventListener("keydown", (e) => {
+  console.log(e.key);
 });
